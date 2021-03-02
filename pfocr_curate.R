@@ -23,7 +23,7 @@ if (is.null(pmc.df.all$fig.type))
 dapply(pmc.df.all[1:5,], function(df) {  # subset for rounds, e.g., fig.list[1001:length(fig.list)]
   f <- df$pmc.figid
   
-  if (!grepl("^PMC\\d+__.*\.jpg$",f)){
+  if (!grepl("^PMC\\d+__.*.jpg$",f)){
     print(paste("Skipping",f)) #skip garbage entries
     next
   }
